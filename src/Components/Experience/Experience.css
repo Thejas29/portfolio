@@ -1,0 +1,124 @@
+.experience {
+    padding: 60px 0;
+    color: #333;
+    background: none;
+  }
+  
+  .experience h2 {
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-left: 4px solid #6c5ce7;
+    padding-left: 10px;
+  }
+  
+  /* Work Experience List */
+  .experience__list {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .experience__item {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 18px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .experience__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .experience__item h3 {
+    color: #222;
+    margin: 0 0 6px;
+  }
+  
+  .experience__company {
+    font-weight: bold;
+    color: #6c5ce7;
+    margin-right: 10px;
+  }
+  
+  .experience__duration {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .experience__item p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  /* Projects Grid */
+  .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .project__card {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .project__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .project__card h3 {
+    color: #222;
+    margin: 0 0 6px;
+  }
+  
+  .project__tech {
+    font-size: 14px;
+    color: #6c5ce7;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .project__card p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  
+  /* Buttons */
+  .btn {
+    background: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+  }
+  
+  .btn:hover {
+    background: #574bdb;
+  }
+  
+  .btn--ghost {
+    background: transparent;
+    border: 1px solid #6c5ce7;
+    color: #6c5ce7;
+  }
+  
+  .btn--ghost:hover {
+    background: #6c5ce7;
+    color: #fff;
+  }
+  

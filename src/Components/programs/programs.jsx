@@ -12,7 +12,7 @@ import { Monitor, Server, Shield } from 'lucide-react'
 
 const programs = () => {
   return (
-    <div className='programs'>
+    <div className='programs' id = 'programs'>
         <div className="program">
             <img src={program_1} alt="" />
             <div className="caption">

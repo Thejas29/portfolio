@@ -6,6 +6,7 @@ import Title from './Components/title/title'
 import About from './Components/about/about'
 import Contact from './Components/contact/contact'
 import Footer from './Components/footer/footer'
+import Experience from './Components/Experience/Experience'
 const App = () => {
 
   const contactRef = useRef(null);
@@ -21,6 +22,7 @@ const App = () => {
       <div className="container">
         <Title subtitle='What I Offer' title='My Services'/>
         <Programs/>
+        <Experience/>
         <About/>
         <Title subtitle='Contact Me' title='Get In Touch'/>
         <Contact/>
