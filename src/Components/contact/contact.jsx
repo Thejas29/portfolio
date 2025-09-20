@@ -36,7 +36,7 @@ const contact = () => {
   return (
     <div className='contact'>
         <div className="contact-col">
-            <h3>Send us a message <img src={msg_icon} alt="" /></h3>
+            <h3>Send me a message <img src={msg_icon} alt="" /></h3>
             <p>Feel free to contact me for any inquiries or collaborations.</p>
             <ul>
                 <li><img src={email_icon} alt="" />thejassivakumar@gmail.com</li>
