@@ -26,9 +26,11 @@ const navbar = ({onContactClick}) => {
             <li><Link to='programs' smooth={true} offset={-260} duration={500}>Services</Link></li>
             <li><Link to='experience' smooth={true} offset={-150} duration={500}>Experience</Link></li>
             <li><Link to='about' smooth={true} offset={-150} duration={500}>About</Link></li>            
-            <btn className='btn'>
-            <Link to='contact' smooth={true} offset={-260} duration={500}>Contact</Link>
-            </btn>
+            <li>
+              <Link to="/contact">
+                <button className="btn">Contact</button>
+              </Link>
+            </li>
         </ul>
         <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu}/>
     </nav>
