@@ -62,23 +62,50 @@
   @media (max-width: 850px) {
     .hero {
       flex-direction: column;
+      justify-content: center;
       text-align: center;
+      padding-top: 60px; /* optional: small spacing from top */
+      padding-bottom: 40px;
+    }
+  
+    .hero-left {
+      order: 1; 
+      margin-bottom: 20px;
+    }
+  
+    .hero-right {
+      order: 2;
     }
   
     .hero-left h1,
     .hero-right h1 {
-      font-size: 36px;
+      font-size: 32px;
     }
   
     .hero-left p,
     .hero-right p {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   
+  
   @media (max-width: 650px) {
+
+    .hero {
+      flex-direction: column; /* stack vertically */
+      text-align: center;     /* center align text */
+    }
+
+    .hero-left {
+      order: 1;              /* show first */
+      margin-bottom: 20px;   /* space between sections */
+    }
+    .hero-right {
+      order: 2;              /* show below hero-left */
+    }
     .hero-left h1,
     .hero-right h1 {
+      text-align: center;
       font-size: 28px;
     }
   

@@ -1,6 +1,9 @@
 import React from "react";
 import "./Experience.css";
-import title from "../title/title";
+import carBookingImg from "../../assets/car-booking.jpg";
+import chauffeurImg from "../../assets/chauffeur.jpg";
+import hospitalImg from "../../assets/hospital.jpg";
+import rewardImg from "../../assets/reward.jpg";
 
 const experiences = [
     {
@@ -16,21 +19,25 @@ const projects = [
     title: "Car Booking System",
     tech: "Node.js, MySQL",
     description: "Built a car booking system with Node.js and MySQL.",
+    image: carBookingImg, // 👈 Add thumbnail path
   },
   {
     title: "Chauffeur Management System",
     tech: "Node.js, Express, PostgreSQL, DynamoDB",
-    description: "Designed and implemented a chauffeur management system with Node.js, Express, PostgreSQL, and DynamoDB.",
+    description: "Designed and implemented a chauffeur management system.",
+    image: chauffeurImg,
   },
   {
-    title: "Hospital Management system",
-    tech: "React js",
+    title: "Hospital Management System",
+    tech: "React.js, Firebase",
     description: "Built a hospital management system with React.js and Firebase.",
+    image: hospitalImg,
   },
   {
-    title: "Shopping and Reward Management System",
+    title: "Shopping & Reward Management System",
     tech: "Node.js, Express, PostgreSQL, Sequelize",
-    description: "Developed a purchase and reward management system with Node.js, Express, PostgreSQL, and Sequelize.",
+    description: "Developed a purchase and reward management system.",
+    image: rewardImg,
   }
 ];
 
@@ -53,6 +60,9 @@ const Experience = () => {
       <div className="projects__grid">
         {projects.map((proj, i) => (
           <div key={i} className="project__card">
+            {proj.image && (
+              <img src={proj.image} alt={proj.title} className="project__thumbnail" />
+            )}
             <h3>{proj.title}</h3>
             <span className="project__tech">{proj.tech}</span>
             <p>{proj.description}</p>
